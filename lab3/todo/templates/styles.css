@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: white;
+    background-color: black;
+    padding: 0.5em 0.5em;
+}
+
+.content {
+    margin: 0.5em 10em;
+}
+
+th, td{
+    text-align: left;
+    width: 15em;
+}
+
+hr {
+    margin: 0.2em 0em 1em 0em;
+}
+
+button {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    outline: none;
+}
+
+button:active {
+    background-color: darkgrey;
+    transform: translateY(1px);
+}
+
+.add-button {
+    margin-bottom: 0.3em;
+    color: white;
+    background-color: dodgerblue;
+}
+
+.view-button {
+    background-color: orange;
+}
+
+.delete-button {
+    color: white;
+    background-color: crimson;
+}
