@@ -36,7 +36,6 @@ def add_list(request):
         form.save()
         form = TodoForm()
     context = {'form': form}
-    print(context)
     return render(request, 'form.html', context)
 
 

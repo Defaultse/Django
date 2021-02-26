@@ -10,10 +10,12 @@ class TodoForm(ModelForm):
         widgets = {
             "task": TextInput(attrs={
                 'placeholder': 'Your task',
-                'type': 'data'
+                'type': 'text',
+                'class': 'data-in'
             }),
             "due_on_date": DateTimeInput(attrs={
                 'placeholder': 'Due on',
-                'type': 'date'
+                'type': 'date',
+                'class': 'data-in'
             })
         }
