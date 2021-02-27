@@ -25,30 +25,30 @@ tasks = [
 
 
 def show_list(request):
-    todos = Todo.objects.filter(status=False)
+    # todos = Todo.objects.filter(status=False)
     context = {
-        'todos': todos
+        'todos': tasks
     }
     return render(request, 'todo_list.html', context)
 
 
-def show_todo(request, id):
-    todo = Todo.objects.get(id=id)
-    return HttpResponse(todo)
+# def show_todo(request, id):
+#     todo = Todo.objects.get(id=id)
+#     return HttpResponse(todo)
 
 
 def add_list(request):
-    form = TodoForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        form = TodoForm()
-    context = {'form': form}
+    # form = TodoForm(request.POST or None)
+    # if form.is_valid():
+    #     form.save()
+    #     form = TodoForm()
+    context = {'form': tasks}
     return render(request, 'form.html', context)
 
 
 def show_completed(request):
-    completed_todos = Todo.objects.filter(status=True)
+    # completed_todos = Todo.objects.filter(status=True)
     context = {
-        'completed_todos': completed_todos
+        'completed_todos': tasks
     }
     return render(request, 'completed_todo_list.html', context)

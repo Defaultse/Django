@@ -14,7 +14,7 @@
             <th>Mark</th>
         </tr>
         {% for todo in todos %}
-{#            {% if todo.status != True %}#}
+            {% if todo.status != True %}
                 <tr>
                     <td>{{ todo.task }}</td>
                     <td>{{ todo.creation_date }}</td>
@@ -24,7 +24,7 @@
                         <button>Done</button>
                     </td>
                 </tr>
-{#            {% endif %}#}
+            {% endif %}
         {% endfor %}
     </table>
     <br/>
